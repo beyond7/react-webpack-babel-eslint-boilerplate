@@ -1,0 +1,64 @@
+{
+  "name": "webpackbase",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --hot",
+    "start": "node server.js",
+    "build": "cross-env NODE_ENV=production webpack"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@hot-loader/react-dom": "^16.8.6",
+    "axios": "^0.19.0",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "cors": "^2.8.5",
+    "cross-env": "^5.2.0",
+    "css-loader": "^3.2.0",
+    "dotenv-webpack": "^1.7.0",
+    "eslint-loader": "^2.2.1",
+    "express": "^4.17.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "jquery": "^3.4.1",
+    "koa-connect": "^2.0.1",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-hot-loader": "^4.12.10",
+    "react-redux": "^7.1.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "^3.0.1",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0",
+    "sass-loader": "^7.1.0",
+    "script-ext-html-webpack-plugin": "^2.1.4",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2",
+    "webpack-merge": "^4.2.1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.8.0"
+  }
+}
