@@ -1,36 +1,4 @@
-// @import "@blueprintjs/core/lib/css/blueprint.css";
-
-@import "@blueprintjs/core/src/blueprint.scss";
-@import "@blueprintjs/docs-theme/src/docs-theme.scss";
-@import "~@blueprintjs/core/lib/scss/variables";
-@import "@blueprintjs/table/src/table.scss";
-
 body {
-	overflow: auto;
-	 margin: 0;
-	 
-	::-webkit-scrollbar {
-		width: 5px;
-		height: 5px;
-	}
-	  
-	  /* Track */
-	::-webkit-scrollbar-track {
-		background: #ffffff; 
-	}
-	  
-	  /* Handle */
-	::-webkit-scrollbar-thumb {
-		background: #182026; 
-	}
-	  
-	  /* Handle on hover */
-	::-webkit-scrollbar-thumb:hover {
-		background: #182026; 
-	}
-}
-
-._AppRouterContent {
-	display: flex;
-	flex-direction: row;
+  overflow: auto;
+  margin: 0;
 }

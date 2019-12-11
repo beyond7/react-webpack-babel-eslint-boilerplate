@@ -1,1 +1,3 @@
 # webpack_base
+
+React + Webpack + ESLint + DotENV + ...
