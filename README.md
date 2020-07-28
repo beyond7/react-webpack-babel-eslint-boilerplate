@@ -1,3 +1,3 @@
-# webpack_base
+# Advanced React | Webpack | Babel | ESLint Boilerplate
 
 React + Webpack + ESLint + DotENV + ...
