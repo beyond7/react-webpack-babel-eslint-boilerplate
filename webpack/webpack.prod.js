@@ -1,14 +1,14 @@
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const commonPaths = require("./paths");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const commonPaths = require('./paths');
 
 module.exports = {
-  mode: "production",
+  mode: 'production',
   output: {
     filename: `${commonPaths.jsFolder}/[name].[hash].js`,
     path: commonPaths.outputPath,
-    chunkFilename: "[name].[chunkhash].js",
-    publicPath: "/"
+    chunkFilename: '[name].[chunkhash].js',
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -17,19 +17,18 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           {
-            loader: "css-loader" // translates CSS into CommonJS modules
+            loader: 'css-loader', // translates CSS into CommonJS modules
           },
-          "sass-loader"
-        ]
-      }
-    ]
+          'sass-loader',
+        ],
+      },
+    ],
   },
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: `${commonPaths.cssFolder}/[name].css`,
-      chunkFilename: "[id].css"
-    })
+      chunkFilename: '[id].css',
+    }),
   ],
-  devtool: "source-map"
 };

@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const autoprefixer = require('autoprefixer');
 const commonPaths = require('./paths');
 
 module.exports = {
@@ -28,9 +29,8 @@ module.exports = {
           {
             loader: 'postcss-loader', // Run postcss actions
             options: {
-              plugins: function() {
-                // postcss plugins, can be exported to postcss.config.js
-                return [require('autoprefixer')];
+              plugins: () => {
+                return [autoprefixer];
               },
             },
           },

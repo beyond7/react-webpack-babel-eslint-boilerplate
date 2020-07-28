@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "jsx": "preserve",
+    "paths": {
+      "App/*": ["./src/*"]
+    },
+    "baseUrl": "."
+  },
+  "exclude": ["node_modules"]
+}
